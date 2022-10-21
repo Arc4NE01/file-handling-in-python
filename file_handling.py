@@ -88,6 +88,15 @@ def tell_seek():
     f.close()
 
 
+def using_sys():
+    f = open(var2)
+    sys.stdin = f
+    s = input()
+    s1 = input()
+    print(s)
+    print(s1)
+
+
 # # print(file.read())
 # file.close()
 # file1 = open(r"G:\D\Codes\hello.txt", "r+")
@@ -109,4 +118,5 @@ def tell_seek():
 # read_write()
 # with_state()
 # reading()
-tell_seek()
+# tell_seek()
+using_sys()
