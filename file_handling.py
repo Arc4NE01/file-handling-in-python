@@ -97,6 +97,24 @@ def using_sys():
     print(s1)
 
 
+# working with a text file
+def counting():
+    f = open(var2)
+    chars = 0
+    lines = 0
+    words = 0
+    for line in f:
+        lines += 1
+        line = line.strip("\n")
+        chars += len(line)
+        list1 = line.split()
+        words += len(list1)
+    f.close()
+    print("chars", chars)
+    print("lines", lines)
+    print("words", words)
+
+
 # # print(file.read())
 # file.close()
 # file1 = open(r"G:\D\Codes\hello.txt", "r+")
@@ -119,4 +137,5 @@ def using_sys():
 # with_state()
 # reading()
 # tell_seek()
-using_sys()
+# using_sys()
+counting()
